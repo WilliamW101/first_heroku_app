@@ -2,7 +2,7 @@
 <hr />
 
 <% if @cat.picture? %>
-  <%= cl_image_tag(@cat.picture.path) %>
+  <%= cl_image_tag(@cat.picture.path, { size: '250x250', crop: :fit }) %>
 <% end %>
 
 <p> <%= @cat.age %> </p>
