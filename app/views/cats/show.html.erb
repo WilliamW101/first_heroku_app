@@ -1,8 +1,9 @@
 <h1> <%= @cat.name %> </h1>
 <hr />
 
-<!-- <img src=<%= @cat.picture.url %> width='200px /> -->
-<img src=<%= @cat.picture.url(:thumb) %>  />
+<% if @cat.picture? %>
+  <%= cl_image_tag(@cat.picture.path) %>
+<% end %>
 
 <p> <%= @cat.age %> </p>
 <p> <%= @cat.gender %> </p>

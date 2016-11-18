@@ -17,13 +17,13 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 # Bootstrap front end framework
 gem 'bootstrap-sass'
-# Paperclip for images
-gem 'paperclip'
 # Pagination
 gem 'will_paginate'
 # Devise for user auth
 gem 'devise'
-
+# Gem to handle cloudinary images
+gem 'attachinary'
+gem 'cloudinary'
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
@@ -31,6 +31,7 @@ group :development, :test do
   gem 'faker'
   gem 'populator'
   gem 'annotate'
+  gem 'dotenv-rails'
 end
 
 group :development do
